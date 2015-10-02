@@ -1,25 +1,34 @@
 <!DOCTYPE html>
-<!-- Bootstrap the angular app after the Google Java Script libraries are loaded. -->
 <html lang="en">
+
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="School ID Cards | Staff ID Cards | Identity Cards Holders">
+    <meta name="author" content="School ID Cards | Staff ID Cards | Identity Cards  Holders">
+    <meta name="keywords" content="School ID Cards,Staff ID Cards,Identity Cards Holders">
 
-    <title>Conference Central</title>
+    <title>School ID Cards | Staff ID Cards | Identity Cards & Holders</title>
 
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/bootstrap-cosmo.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/offcanvas.css">
-    <link rel="shortcut icon" href="/img/favicon.ico">
-    <meta property="og:title" content="Conference Central">
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="Conference Central web app that lets you manage conferences.">
-    <meta property="og:image" content="/img/CloudPlatform_logo.png">
-    <meta property="og:site_name" content="An web app powered by Google App Engine">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+ <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.js"></script>
     <script>
         /**
@@ -36,56 +45,191 @@
     <script src="//apis.google.com/js/client:plusone.js?onload=init"></script>
 </head>
 
-<!-- Restore the credential from cookie if stored by calling initSignInButton() -->
-<body ng-controller="RootCtrl" ng-init="initSignInButton()">
+<body>
 
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">Conference Central</a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="#">Shyam Sharnam Cards</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li ng-class="{ active: isActive('/conference')}" ng-click="collapseNavbar()"><a href="#/conference">Show Conferences</a></li>
-                <li ng-class="{ active: isActive('/conference/create')}" ng-click="collapseNavbar()"><a href="#/conference/create" >Create Conferences</a></li>
-                <li ng-class="{ active: isActive('/profile')}" ng-click="collapseNavbar()"><a href="#/profile">My Profile</a></li>
-                <li class="nav-divider"></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li id="signInLink" ng-hide="getSignedInState()"><a ng-click="signIn(); collapseNavbar()">Google+ SignIn</a></li>
-                <li id="signOutLink" ng-show="getSignedInState()"><a ng-click="signOut(); collapseNavbar()">Log out</a></li>
-            </ul>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Header -->
+    <a name="about"></a>
+    <div class="intro-header">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>Shyam Sharnam Cards</h1>
+                        <h3>Deals in all Types of:-
+                            Plastic(Pvc) Cards, School ID Cards,Staff ID Cards, Secure Cards, Barcoding, Bio- Metric, Smart & Long life Cards </h3>
+                        <hr class="intro-divider">
+                        <ul class="list-inline intro-social-buttons">
+                         <li>
+                            <a target="_blank" href="https://www.facebook.com/ShyamSharnamCards?fref=ts" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Facebook</span></a>
+                        </li>
+                        <li>
+                        </li>
+                        <li>
+                            <a target="_blank" href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Google Plus</span></a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </div>
+        <!-- /.container -->
+
     </div>
-</div>
+    <!-- /.intro-header -->
 
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12">
-            <div id="rootMessages" class="alert alert-{{alertStatus}}" ng-show="rootMessages">
-                <span ng-bind="rootMessages"></span>
-                <i class="dismiss-messages pull-right glyphicon glyphicon-remove" ng-click="rootMessages = ''"
-                   ng-show="rootMessages"></i>
+    <!-- Page Content -->
+
+	<a  name="services"></a>
+    <div class="content-section-a">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Card created with RFID Technology<br></h2>
+                    <p class="lead">We create cards with the latest technology i.e RFID. This technology is used when you want to store some sort of information in the identity cards. This information can be used to authenticate particular student, employee etc. 
+                        <p><a target="_blank" href="https://en.wikipedia.org/wiki/Radio-frequency_identification">Learn More</a><p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/ipad.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">School ID Cards<br></h2>
+                    <p class="lead"> Schools, colleges and universities utilize secure ID cards to foster a safe learning environment, often combining access control, identification and transactional applications into one card for flexibility and convenience. Shyam Sharnam Cards:-  school ID systems make it easy and affordable to integrate new ID card technologies that make campus life more efficient for everyone.</p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive" src="img/dog.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+
+    <!-- /.content-section-a -->
+
+	<a  name="contact"></a>
+    <div class="banner">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Connect to Shyam Sharnam Cards</h2>
+                    <h3>Girish Banga <p>+919896051567</P><h3>
+
+                </div>
+                <div class="col-lg-6">
+                    <ul class="list-inline banner-social-buttons">
+                       <li>
+                            <a target="_blank" href="https://www.facebook.com/ShyamSharnamCards?fref=ts" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Facebook</span></a>
+                        </li>
+                        <li>
+                        </li>
+                        <li>
+                            <a target="_blank" href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Google Plus</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.banner -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#services">Services</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    
+                </div>
             </div>
         </div>
-    </div>
-    <ng-view></ng-view>
-</div>
+    </footer>
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-<script src="/js/app.js"></script>
-<script src="/js/controllers.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-<!-- Put the signInButton to invoke the gapi.signin.render to restore the credential if stored in cookie. -->
-<span id="signInButton" style="display: none" disabled="true"></span>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
+
 </html>
